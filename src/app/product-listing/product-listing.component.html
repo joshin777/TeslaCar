@@ -1,0 +1,43 @@
+<div class="background-image">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+    
+        <input type="text" class="form-control mb-3" placeholder="Search..." [(ngModel)]="searchQuery">
+  
+       
+        <label>Price Range:</label>
+        <select class="form-control mb-3" [(ngModel)]="selectedPriceRange">
+          <option value="">All</option>
+          <option value="0-10000">$0 - $10,000</option>
+          <option value="10001-20000">$10,001 - $20,000</option>
+         
+        </select>
+      </div>
+    </div>
+  
+    
+    <div class="row">
+      <div class="col-md-4 mb-3" *ngFor="let car of filteredCars">
+        <div class="card">
+          <img [src]="car.imageUrl" class="card-img-top" alt="Car Image">
+          <div class="card-body">
+            <h5 class="card-title">{{ car.model }}</h5>
+            <p class="card-text">{{ car.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="pagination">
+          <li class="page-item" *ngFor="let page of totalPages; let i = index" [class.active]="currentPage === i + 1">
+            <a class="page-link" (click)="changePage(i + 1)">{{ i + 1 }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>

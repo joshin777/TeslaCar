@@ -1,0 +1,50 @@
+styles.css
+
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  
+  
+  .features, .performance, .sustainability {
+    padding: 50px 0;
+  }
+  
+  .footer {
+    background-color: #000;
+    color: #8e6ee5;
+  }
+ 
+.features,
+.performance,
+.sustainability {
+    position: relative;
+    z-index: 999; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 50px 0;
+}
+
+
+.features .container,
+.performance .container,
+.sustainability .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.features h2,
+.performance h2,
+.sustainability h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333; 
+    text-align: center;
+}
+
+

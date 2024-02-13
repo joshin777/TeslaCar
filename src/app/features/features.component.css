@@ -1,0 +1,75 @@
+
+.features {
+    padding: 50px 0;
+    background-color: #f8f9fa; 
+  }
+  
+  .features .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .features h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333; 
+    text-align: center;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .features h2:hover {
+    background-color: #007bff; 
+    color: #fff; 
+  }
+  
+  .features .feature-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .features .feature-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .features .feature-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333; 
+  }
+  
+  .features .feature-item p {
+    font-size: 16px;
+    color: #666; 
+  }
+  .features .feature-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+  }
+  
+  .features .feature-item img:hover {
+    transform: scale(1.1); 
+  }
+  .feature-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.feature-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.feature-item .card-body {
+    padding: 20px;
+}

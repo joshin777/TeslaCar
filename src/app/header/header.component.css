@@ -1,0 +1,65 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    padding: 20px 0;
+}
+
+/* Animation keyframes */
+@keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+    height: 29.1rem;
+    overflow: hidden; 
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('../../assets/tesla-car.jpg') repeat-x;
+    animation: backgroundAnimation 20s linear infinite;
+}
+.navbar-nav .nav-link {
+    transition: all 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; 
+    transform: scale(1.1); 
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+.components-container {
+    position: relative;
+    z-index: 2;
+}

@@ -1,0 +1,24 @@
+<div *ngIf="car" class="container">
+  <h2>{{ car.model }}</h2>
+  <p>Description: {{ car.description }}</p>
+  <p>Price: {{ car.price }}</p>
+  <p>Available Variants: {{ car.variants }}</p>
+  
+  <div>
+    <label for="colorSelector">Select Color:</label>
+    <select id="colorSelector"
+     
+     >
+     <!-- (change)="changeColor($event.target?.value)"
+      .....code needed value not set -->
+      
+      <option *ngFor="let color of car.colors" [value]="color">{{ color }}</option>
+    </select>
+  </div>
+  
+  <div>
+    <img [src]="selectedImage" alt="Car Image">
+  </div>
+  
+  <button class="btn btn-primary" (click)="navigateToCustomization()">Build and Price</button>
+</div>
